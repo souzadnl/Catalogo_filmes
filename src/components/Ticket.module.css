@@ -1,0 +1,33 @@
+.ticket {
+    color: rgb(45, 56, 78);
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(68, 141, 214, 0.2) 0px 8px 24px;
+    border: 0.1px solid rgb(187, 187, 187);
+}
+
+.ticket:hover {
+    background: rgb(31, 39, 54);
+    border: 0.1px solid rgb(129, 129, 129);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.ticket h1{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.ticket h2{
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+
+.ticket h3{
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+}

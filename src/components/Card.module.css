@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.texto {
+    padding: 10px;
+}
+
+.card {
+    width: 220px;
+    border-radius: 10px;
+    background: rgb(40, 42, 61);
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
+    transition: all 0.2s;
+
+    flex-basis:15%; /* Define a largura inicial de cada item */
+    flex-grow: 1; /* Permite que os itens cresçam para preencher o espaço restante */
+    max-width: 220px;
+
+}
+
+.card:hover {
+    opacity: 0.9;
+    transform: scale(0.99);
+    cursor: pointer;
+}
+
+.card h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card .description {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+    color: rgb(90, 95, 136);
+}

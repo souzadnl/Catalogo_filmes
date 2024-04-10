@@ -1,0 +1,21 @@
+.container {
+    justify-content: center;
+    background-color: rgb(26, 30, 39);
+    color: white;
+    padding: 0 50px;
+}
+
+.cards {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 3%;
+    justify-content: first baseline;
+}
+
+.texto {
+    margin-top: 50px;
+    font-size: 14px;
+    color: rgb(90, 95, 136);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
