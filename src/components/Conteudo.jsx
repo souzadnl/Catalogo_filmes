@@ -2,8 +2,10 @@ import estilos from './Conteudo.module.css'
 import Banner from './Banner'
 import Card from './Card'
 import Movies from '../assets/Movies'
+import Modal from './Modal'
 
 export function Conteudo() {
+
     return (
         <main className={estilos.container}>
 
@@ -17,14 +19,11 @@ export function Conteudo() {
 
             <div className={estilos.cards}>
 
-                {Movies.map((data) => (
-                    <Card img={data.img} key={data.id} title={data.title} description={data.description} />
+                {Movies.map((data) => (                  
+                    <Card rank={data.rank} img={data.img} key={data.id} title={data.title} description={data.description} conteudo={data}/>
                 ))}
 
             </div>
-
-
-
 
         </main>
     )

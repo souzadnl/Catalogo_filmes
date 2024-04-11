@@ -46,3 +46,15 @@ img {
     max-width: 180px;
     color: rgb(90, 95, 136);
 }
+
+/**/
+
+.modal{
+  display: none;
+  background: red;
+
+}
+
+.card:hover .modal{
+  display: block;
+}
