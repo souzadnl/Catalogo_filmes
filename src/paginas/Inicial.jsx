@@ -3,16 +3,19 @@ import fontes from './../../public/fontes.module.css'
 import { Cabecalho } from '../components/Cabecalho'
 import { Conteudo } from '../components/Conteudo'
 import { Lateral } from '../components/Lateral'
+import { DataProvider } from '../components/DataContext'
 
 function Inicial() {
   return (
-    <div className={estilos.gridContainer}>
+    <DataProvider>
+      <div className={estilos.gridContainer}>
 
-      <Cabecalho/>
-      <Conteudo/>
-      <Lateral/>
+        <Cabecalho />
+        <Conteudo />
+        <Lateral />
 
-    </div>
+      </div>
+    </DataProvider>
   )
 }
 

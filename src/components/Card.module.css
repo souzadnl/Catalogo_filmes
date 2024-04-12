@@ -16,6 +16,7 @@ img {
 
 .card {
     width: 220px;
+    height: 260px;
     border-radius: 10px;
     background: rgb(40, 42, 61);
     box-shadow: rgba(0, 0, 0, 0.8) 0px 8px 24px;
@@ -48,13 +49,21 @@ img {
 }
 
 /**/
-
-.modal{
-  display: none;
-  background: red;
-
+.modal {
+    display: none;
 }
 
-.card:hover .modal{
-  display: block;
+.modal_conteudo {
+    margin: auto;
+    background: blue;
+}
+
+
+.card:hover ~ .modal {
+    background: red;
+    display: flex;
+    position:fixed;
+    top: 100px;
+    width: 100%;
+    left: 0;
 }

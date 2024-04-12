@@ -1,13 +1,18 @@
 import estilos from './Card.module.css'
 import Modal from './Modal'
+import { useData } from './DataContext'
 
 function Card(props) {
 
+    const { handleHover } = useData();
+
+    const handleMouseEnter = () => {
+        handleHover({ rank: props.rank, img: props.img, title: props.title, description: props.description });
+    }
+
     return (
         <div>
-            <Modal rank={data.rank} img={data.img} key={data.id} title={data.title} description={data.description} />,
-
-            <div className={estilos.card}>
+            <div className={estilos.card} onClick={handleMouseEnter}>
                 <div style={estilos.img}>
                     <img src={props.img}></img>
                 </div>
@@ -22,6 +27,8 @@ function Card(props) {
                     </div>
                 </div>
             </div>
+
+          
         </div>
 
     )
